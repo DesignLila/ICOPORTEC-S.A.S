@@ -146,6 +146,55 @@ header.navbar {
     padding: 10px 0;
   }
 }
+/* Navbar estilos básicos */
+.navbar {
+  padding: 10px 20px;
+  z-index: 999;
+}
+
+.navbar-nav .nav-link {
+  color: #00123e;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Responsive ajuste para móviles */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* fondo visible al abrir el menú */
+  }
+}
+.btn-scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #00123e;
+  color: white;
+  border-radius: 50%;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  z-index: 1000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.btn-scroll-top:hover {
+  background-color: #011e5a;
+}
+
+
 }
 /* SECCIÓN QUIÉNES SOMOS */
 .quienes-section {
