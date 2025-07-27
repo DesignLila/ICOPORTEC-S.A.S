@@ -122,6 +122,30 @@ header.navbar {
   .navbar .nav-link {
     font-size: 0.85rem;
   }
+  /* Estilo base para nav-links */
+.navbar-nav .nav-link {
+  color: #00123e;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Hacer que el fondo sea transparente sin afectar colapso */
+.navbar {
+  background-color: transparent !important;
+  padding: 10px 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
 }
 /* SECCIÓN QUIÉNES SOMOS */
 .quienes-section {
