@@ -1,3 +1,10 @@
+/*
+  Diseño exclusivo realizado por Design Lila para ICOPORTEC S.A.S.
+  Este archivo de estilos está protegido por derechos de autor.
+  Prohibida su reproducción, distribución o uso sin autorización.
+  © 2025 Todos los derechos reservados.
+*/
+
 /* === FONDO GENERAL EN TODA LA PÁGINA === */
 body::before {
   content: "";
@@ -513,4 +520,12 @@ section {
   color: #00123e;
   font-weight: 600;
   margin: 0;
+}
+
+.footer {
+  background-color: transparent;
+  color: #00123e;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
 }
