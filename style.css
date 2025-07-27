@@ -1,0 +1,290 @@
+/* === FONDO GENERAL EN TODA LA PÁGINA === */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR TRANSPARENTE */
+header.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+  padding: 10px 30px;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+/* HERO VIDEO */
+.hero-video {
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
+}
+
+/* VIDEO */
+.hero-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  z-index: 0;
+}
+
+/* CAPA OSCURA */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* CAJA DESENFOCADA A LA IZQUIERDA */
+.blur-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.blur-box img {
+  max-height: 220px;
+  margin-bottom: 20px;
+}
+
+.blur-box p {
+  font-size: 1rem;
+  color: #00123e;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .blur-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px 20px;
+  }
+
+  .blur-box img {
+    max-height: 140px;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.85rem;
+  }
+}
+/* SECCIÓN QUIÉNES SOMOS */
+.quienes-section {
+  .quienes-section {
+  background-color: transparent;
+}
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00123e;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.quienes-text {
+  max-width: 900px;
+  margin: 0 auto 25px auto;
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+}
+/* SECCIÓN QUIÉNES SOMOS CON FONDO SUAVE */
+.quienes-section {
+  position: relative;
+  padding: 80px 20px;
+  .quienes-section {
+  background-color: transparent;
+}
+  overflow: hidden;
+}
+
+/* === FONDO GENERAL CON EFECTO AZUL Y MÁS VISIBILIDAD === */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22; /* más visible */
+  filter: blur(2px);
+  z-index: -2;
+}
+
+/* CAPA AZUL SUAVE ENCIMA DEL FONDO */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 18, 62, 0.1); /* azul #00123e con baja opacidad */
+  z-index: -1;
+}
+/* SECCIÓN MISIÓN Y VISIÓN CON CUADROS AZUL SUAVE */
+.mision-vision-section {
+  padding: 80px 20px;
+  background-color: transparent;
+}
+
+.glass-box {
+  background-color: rgba(255, 255, 255, 0.35); /* blanco translúcido */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.glass-box:hover {
+  transform: translateY(-4px);
+}
+
+.subsection-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #00123e;
+  text-transform: uppercase;
+}
+
+.justified-text {
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #00123e; /* azul oscuro para contraste */
+  line-height: 1.7;
+}
+/* SECCIÓN SERVICIOS */
+.servicios-section {
+  padding: 80px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.placeholder-img {
+  height: 180px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 12px;
+}
+
+/* LISTA DEL SERVICIO */
+.servicio-list {
+  padding-left: 1.2rem;
+}
+
+.servicio-list li {
+  margin-bottom: 10px;
+  color: #00123e;
+}
+
+/* CONTACTO */
+.contact-section {
+  padding: 80px 20px;
+  background-color: transparent;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #00123e;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  font-size: 1.1rem;
+}
+
+/* BOTÓN FLOTANTE */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #00123e;
+  color: white;
+  border-radius: 50%;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  z-index: 1000;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn-scroll-top:hover {
+  background-color: #011e5a;
+}
+

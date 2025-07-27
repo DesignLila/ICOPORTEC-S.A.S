@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICOPORTEC S.A.S.</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons (para los iconos como bullseye, binoculars, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- Font Awesome (para íconos más llamativos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <!-- NAVBAR transparente -->
+  <header class="navbar d-flex justify-content-end">
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a href="#quienes" class="nav-link">Quiénes Somos</a></li>
+        <li class="nav-item"><a href="#mision y vision" class="nav-link">Misión y Visión</a></li>
+        <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero-video">
+    <video id="videoFondo" autoplay muted loop playsinline>
+      <source src="videos/presentacion.mp4" type="video/mp4" />
+      Tu navegador no admite el video.
+    </video>
+
+
+    <!-- Caja con desenfoque a la izquierda -->
+    <div class="blur-box">
+      <img src="images/logo.png" alt="Logo ICOPORTEC" />
+      <p>Soluciones profesionales<br>para construcción y desarrollo industrial</p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Video más lento
+    const video = document.getElementById('videoFondo');
+    video.playbackRate = 0.9;
+  </script>
+<!-- SECCIÓN QUIÉNES SOMOS -->
+<section id="quienes" class="quienes-section" data-aos="fade-up" data-aos-duration="1200">
+  <div class="overlay-bg"></div>
+
+  <div class="container position-relative">
+    <h2 class="section-title text-center" data-aos="zoom-in" data-aos-delay="200">Quiénes Somos</h2>
+    <p class="quienes-text" data-aos="fade-up" data-aos-delay="300">
+      Fundada en Barranquilla en 1998, Icoportec S.A.S. es una empresa especializada en la fabricación y distribución de productos en polietileno expandible (EPS), diseñados para atender las necesidades del sector de la construcción en la región Caribe de Colombia.
+    </p>
+    <p class="quienes-text" data-aos="fade-up" data-aos-delay="500">
+      Nuestra trayectoria se define por el compromiso con la calidad, la eficiencia y el servicio personalizado. En Icoportec, creemos en el crecimiento conjunto con nuestros clientes, brindándoles soluciones confiables y oportunas para cada proyecto, sin importar su tamaño o duración.
+    </p>
+    <p class="quienes-text" data-aos="fade-up" data-aos-delay="700">
+      Desde el momento en que se genera una orden de compra, nos enfocamos en entender, anticipar y atender las necesidades de nuestros aliados estratégicos, garantizando entregas a tiempo y un acompañamiento constante. Somos más que proveedores: somos un equipo dispuesto a construir contigo.
+    </p>
+  </div>
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!-- SECCIÓN MISIÓN Y VISIÓN CON EFECTO CRISTAL Y NUEVOS ICONOS -->
+<section id="mision" class="mision-vision-section">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+
+      <!-- MISIÓN -->
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="glass-box p-4 rounded-4 shadow d-flex flex-column">
+          <div class="icon-box text-center mb-3">
+            <i class="fa-solid fa-lightbulb" style="font-size: 3rem; color: #00123e;"></i>
+          </div>
+          <h3 class="subsection-title text-center">Nuestra Misión</h3>
+          <p class="justified-text">
+            En Icoportec S.A.S., nos dedicamos al desarrollo y distribución de soluciones en poliestireno expandible (EPS), plásticos y otros materiales sintéticos, orientadas a transformar la industria de la construcción y los sectores industriales en la región Caribe Colombiana.
+          </p>
+          <p class="justified-text">
+            Nos enfocamos en ofrecer innovación en diseño, excelencia en calidad y eficiencia en cada proyecto, impulsando el crecimiento de nuestros clientes con productos confiables, sostenibles y adaptados a las exigencias del mercado actual.
+          </p>
+        </div>
+      </div>
+
+      <!-- VISIÓN -->
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="glass-box p-4 rounded-4 shadow d-flex flex-column">
+          <div class="icon-box text-center mb-3">
+            <i class="fa-solid fa-binoculars" style="font-size: 3rem; color: #00123e;"></i>
+          </div>
+          <h3 class="subsection-title text-center">Visión</h3>
+          <p class="justified-text">
+            Consolidarnos como líderes indiscutibles en el desarrollo, producción y distribución de productos poliexpandibles para la industria de la construcción en Barranquilla, destacando por nuestra innovación, calidad y compromiso con el desarrollo sostenible.
+          </p>
+          <p class="justified-text">
+            Para el año 2030, proyectamos una expansión estratégica en toda la región Caribe y a nivel nacional, posicionándonos como una empresa referente en soluciones constructivas eficientes, ecológicas y de alto rendimiento técnico.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN NUESTROS SERVICIOS -->
+<section id="servicios" class="servicios-section">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Nuestros Servicios</h2>
+
+    <div class="row g-4 mt-4">
+
+      <!-- CARD DE SERVICIO -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="service-card p-4 rounded-4 shadow">
+          <!-- Espacio para imagen -->
+          <div class="placeholder-img mb-3"></div>
+
+          <!-- Contenido -->
+          <h5 class="text-primary fw-bold">Servicio de Encofrado y Desencofrado</h5>
+          <ul class="servicio-list">
+            <li>Proveer personal capacitado, materiales y herramientas necesarias.</li>
+            <li>Realizar eficientemente el montaje y desmontaje de los casetones.</li>
+            <li>Gestionar el transporte de los módulos de Poliestireno expandido.</li>
+            <li>Retirar los casetones sobrantes una vez finalizada la obra.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ESPACIO VACÍO PARA PRÓXIMO SERVICIO -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="service-card p-4 rounded-4 shadow d-flex flex-column justify-content-center align-items-center text-muted">
+          <div class="placeholder-img mb-3"></div>
+          <p>Próximo servicio aquí</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN DE CONTACTO -->
+<section id="contacto" class="contact-section">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Contáctanos</h2>
+
+    <div class="row g-4 mt-4">
+      <!-- DATOS DE CONTACTO -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info">
+          <p><i class="fas fa-phone-alt text-primary me-2"></i>3103668872 - 3002036457</p>
+          <p><i class="fas fa-envelope text-primary me-2"></i>contacto@icoportec.com</p>
+          <p><i class="fas fa-envelope text-primary me-2"></i>asis_admin@icoportec.com</p>
+          <p><i class="fas fa-map-marker-alt text-primary me-2"></i>Barranquilla - Colombia</p>
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          <div class="col-12 text-end">
+            <button type="submit" class="btn btn-primary px-5">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTÓN FLOTANTE IR ARRIBA -->
+<a href="#inicio" class="btn-scroll-top" title="Volver arriba">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- FOOTER -->
+<footer class="footer text-center py-3">
+  <p class="mb-0">© 2025 ICOPORTEC S.A.S. Todos los derechos reservados.</p>
+</footer>
+
+
+</body>
+</html>
