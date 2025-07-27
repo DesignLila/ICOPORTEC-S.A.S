@@ -194,7 +194,6 @@ header.navbar {
   background-color: #011e5a;
 }
 
-
 }
 /* SECCIÓN QUIÉNES SOMOS */
 .quienes-section {
@@ -361,3 +360,6 @@ body::after {
   background-color: #011e5a;
 }
 
+section {
+  scroll-margin-top: 80px; /* espacio para evitar que la navbar oculte el título */
+}

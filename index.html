@@ -26,11 +26,6 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
   <div class="container">
 
-    <!-- Logo (opcional) -->
-    <a class="navbar-brand" href="#inicio">
-      <img src="images/logo.png" alt="Logo" style="height: 50px;">
-    </a>
-
     <!-- Botón hamburguesa (3 rayas) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
       <span class="navbar-toggler-icon"></span>
@@ -212,10 +207,6 @@
   </div>
 </section>
 
-<!-- BOTÓN FLOTANTE IR ARRIBA -->
-<a href="#inicio" class="btn-scroll-top" title="Volver arriba">
-  <i class="fas fa-arrow-up"></i>
-</a>
 
 <!-- FOOTER -->
 <footer class="footer text-center py-3">
@@ -233,7 +224,18 @@
     }
   });
 </script>
+<script>
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
 
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 992) {
+        new bootstrap.Collapse(navbarCollapse).hide();
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
